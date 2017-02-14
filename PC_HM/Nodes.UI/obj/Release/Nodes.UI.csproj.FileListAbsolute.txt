@@ -1,0 +1,12 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\Nodes.UI.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\Nodes.UI.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\Nodes.Utils.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\log4net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\MySql.Data.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\Nodes.Utils.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\obj\Release\Nodes.UI.csprojResolveAssemblyReference.cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\obj\Release\Nodes.UI.Pager.resources
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\obj\Release\Nodes.UI.csproj.GenerateResource.Cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\obj\Release\Nodes.UI.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\obj\Release\Nodes.UI.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UI\bin\Release\Newtonsoft.Json.dll

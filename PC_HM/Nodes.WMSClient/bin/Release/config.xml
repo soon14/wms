@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <ConnectionString Provider="MySql" Value="115.28.157.138"></ConnectionString>
+  <WebServiceAddress Value="115.28.157.138"></WebServiceAddress>
+  <WebServicePort Value="8030"></WebServicePort>
+  <!--超时时间设置单位s(秒)--> 
+  <TimeOut Value="30"></TimeOut>
+  <WMSConnectionString Provider="MySql" Value="Server=bdb003wmsnodes.mysql.rds.aliyuncs.com;Database=wms;User Id=wms_nodes;Password=dbnodes0___;pooling=true"> </WMSConnectionString>
+</configuration>

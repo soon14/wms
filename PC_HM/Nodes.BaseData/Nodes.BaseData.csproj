@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResGenToolArchitecture>Managed32Bit</ResGenToolArchitecture>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5681F644-90F7-4B98-85AD-43E92F2C8D98}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nodes.BaseData</RootNamespace>
+    <AssemblyName>Nodes.BaseData</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Nodes.WMSClient\dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Nodes.DBHelper">
+      <HintPath>..\Nodes.DBHelper\bin\Debug\Nodes.DBHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Nodes.Resources">
+      <HintPath>..\Nodes.Resources\bin\Debug\Nodes.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="Nodes.Shares">
+      <HintPath>..\Nodes.Shares\bin\Debug\Nodes.Shares.dll</HintPath>
+    </Reference>
+    <Reference Include="Nodes.SystemManage">
+      <HintPath>..\Nodes.SystemManage\bin\Debug\Nodes.SystemManage.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportDesigner, Version=1.0.5397.31137, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Nodes.WMSClient\dlls\ReportDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAreaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAreaEdit.designer.cs">
+      <DependentUpon>FrmAreaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAreaManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAreaManager.designer.cs">
+      <DependentUpon>FrmAreaManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBrandEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrandEdit.designer.cs">
+      <DependentUpon>FrmBrandEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBrandManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBrandManager.designer.cs">
+      <DependentUpon>FrmBrandManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBugReasonEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBugReasonEdit.designer.cs">
+      <DependentUpon>FrmBugReasonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBugReasonManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBugReasonManager.designer.cs">
+      <DependentUpon>FrmBugReasonManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChooseSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChooseSuppliers.designer.cs">
+      <DependentUpon>FrmChooseSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContainerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerEdit.designer.cs">
+      <DependentUpon>FrmContainerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContainerLocatiomManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerLocatiomManager.Designer.cs">
+      <DependentUpon>FrmContainerLocatiomManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContainerMaintain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerMaintain.designer.cs">
+      <DependentUpon>FrmContainerMaintain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContainerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerManager.designer.cs">
+      <DependentUpon>FrmContainerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCtlEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCtlEdit.Designer.cs">
+      <DependentUpon>FrmCtlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerEdit.designer.cs">
+      <DependentUpon>FrmCustomerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCustomerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCustomerManager.designer.cs">
+      <DependentUpon>FrmCustomerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDriverCardEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDriverCardEdit.designer.cs">
+      <DependentUpon>FrmDriverCardEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDriverCardManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDriverCardManager.designer.cs">
+      <DependentUpon>FrmDriverCardManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForkEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForkEdit.designer.cs">
+      <DependentUpon>FrmForkEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmForkManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmForkManager.designer.cs">
+      <DependentUpon>FrmForkManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocationEdit.designer.cs">
+      <DependentUpon>FrmLocationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocationEditType_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocationEditType_C.designer.cs">
+      <DependentUpon>FrmLocationEditType_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocationManager.designer.cs">
+      <DependentUpon>FrmLocationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLocationManagerType_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLocationManagerType_C.designer.cs">
+      <DependentUpon>FrmLocationManagerType_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaterialEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterialEdit.designer.cs">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaterialManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterialManager.designer.cs">
+      <DependentUpon>FrmMaterialManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaterialTypeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterialTypeEdit.designer.cs">
+      <DependentUpon>FrmMaterialTypeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaterialTypeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterialTypeManager.designer.cs">
+      <DependentUpon>FrmMaterialTypeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrgEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrgEdit.designer.cs">
+      <DependentUpon>FrmOrgEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrgManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrgManager.designer.cs">
+      <DependentUpon>FrmOrgManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPassagewayEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassagewayEdit.designer.cs">
+      <DependentUpon>FrmPassagewayEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPassagewayManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassagewayManager.designer.cs">
+      <DependentUpon>FrmPassagewayManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDAEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDAEdit.designer.cs">
+      <DependentUpon>FrmPDAEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPDAManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPDAManager.designer.cs">
+      <DependentUpon>FrmPDAManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProvinceEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProvinceEdit.designer.cs">
+      <DependentUpon>FrmProvinceEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProvinceManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProvinceManager.designer.cs">
+      <DependentUpon>FrmProvinceManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecLocationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecLocationEdit.designer.cs">
+      <DependentUpon>FrmRecLocationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReclocationManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReclocationManager.designer.cs">
+      <DependentUpon>FrmReclocationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRouteEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRouteEdit.designer.cs">
+      <DependentUpon>FrmRouteEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRouteManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRouteManager.designer.cs">
+      <DependentUpon>FrmRouteManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSKUWarehouseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSKUWarehouseEdit.designer.cs">
+      <DependentUpon>FrmSKUWarehouseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSkuWarehouseQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSkuWarehouseQuery.designer.cs">
+      <DependentUpon>FrmSkuWarehouseQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierEdit.designer.cs">
+      <DependentUpon>FrmSupplierEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplierManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplierManager.designer.cs">
+      <DependentUpon>FrmSupplierManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTemperatureEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTemperatureEdit.designer.cs">
+      <DependentUpon>FrmTemperatureEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTemperatureManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTemperatureManager.designer.cs">
+      <DependentUpon>FrmTemperatureManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitEdit.designer.cs">
+      <DependentUpon>FrmUnitEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitGroupEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitGroupEdit.designer.cs">
+      <DependentUpon>FrmUnitGroupEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitGroupEditType_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitGroupEditType_C.designer.cs">
+      <DependentUpon>FrmUnitGroupEditType_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitGroupItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitGroupItem.designer.cs">
+      <DependentUpon>FrmUnitGroupItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitGroupItemType_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitGroupItemType_C.designer.cs">
+      <DependentUpon>FrmUnitGroupItemType_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitGroupManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitGroupManager.designer.cs">
+      <DependentUpon>FrmUnitGroupManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitGroupManagerType_C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitGroupManagerType_C.designer.cs">
+      <DependentUpon>FrmUnitGroupManagerType_C.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnitManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnitManager.designer.cs">
+      <DependentUpon>FrmUnitManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleEdit.designer.cs">
+      <DependentUpon>FrmVehicleEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVehicleManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVehicleManager.designer.cs">
+      <DependentUpon>FrmVehicleManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseEdit.designer.cs">
+      <DependentUpon>FrmWarehouseEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarehouseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarehouseManager.designer.cs">
+      <DependentUpon>FrmWarehouseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZoneEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZoneEdit.designer.cs">
+      <DependentUpon>FrmZoneEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZoneManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZoneManager.designer.cs">
+      <DependentUpon>FrmZoneManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepContianer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepContianer.designer.cs">
+      <DependentUpon>RepContianer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepDriverCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepDriverCard.designer.cs">
+      <DependentUpon>RepDriverCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepLocation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepLocation.designer.cs">
+      <DependentUpon>RepLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepVehicle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepVehicle.designer.cs">
+      <DependentUpon>RepVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UcMaterialGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcMaterialGrid.designer.cs">
+      <DependentUpon>UcMaterialGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UcQueryMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UcQueryMaterial.designer.cs">
+      <DependentUpon>UcQueryMaterial.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAreaEdit.resx">
+      <DependentUpon>FrmAreaEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAreaManager.resx">
+      <DependentUpon>FrmAreaManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBrandEdit.resx">
+      <DependentUpon>FrmBrandEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBrandManager.resx">
+      <DependentUpon>FrmBrandManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBugReasonEdit.resx">
+      <DependentUpon>FrmBugReasonEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBugReasonManager.resx">
+      <DependentUpon>FrmBugReasonManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChooseSuppliers.resx">
+      <DependentUpon>FrmChooseSuppliers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerEdit.resx">
+      <DependentUpon>FrmContainerEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerLocatiomManager.resx">
+      <DependentUpon>FrmContainerLocatiomManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerMaintain.resx">
+      <DependentUpon>FrmContainerMaintain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerManager.resx">
+      <DependentUpon>FrmContainerManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCtlEdit.resx">
+      <DependentUpon>FrmCtlEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerEdit.resx">
+      <DependentUpon>FrmCustomerEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCustomerManager.resx">
+      <DependentUpon>FrmCustomerManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDriverCardEdit.resx">
+      <DependentUpon>FrmDriverCardEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDriverCardManager.resx">
+      <DependentUpon>FrmDriverCardManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForkEdit.resx">
+      <DependentUpon>FrmForkEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmForkManager.resx">
+      <DependentUpon>FrmForkManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocationEdit.resx">
+      <DependentUpon>FrmLocationEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocationEditType_C.resx">
+      <DependentUpon>FrmLocationEditType_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocationManager.resx">
+      <DependentUpon>FrmLocationManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLocationManagerType_C.resx">
+      <DependentUpon>FrmLocationManagerType_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterialEdit.resx">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterialManager.resx">
+      <DependentUpon>FrmMaterialManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterialTypeEdit.resx">
+      <DependentUpon>FrmMaterialTypeEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterialTypeManager.resx">
+      <DependentUpon>FrmMaterialTypeManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrgEdit.resx">
+      <DependentUpon>FrmOrgEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrgManager.resx">
+      <DependentUpon>FrmOrgManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassagewayEdit.resx">
+      <DependentUpon>FrmPassagewayEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassagewayManager.resx">
+      <DependentUpon>FrmPassagewayManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDAEdit.resx">
+      <DependentUpon>FrmPDAEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPDAManager.resx">
+      <DependentUpon>FrmPDAManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProvinceEdit.resx">
+      <DependentUpon>FrmProvinceEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProvinceManager.resx">
+      <DependentUpon>FrmProvinceManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecLocationEdit.resx">
+      <DependentUpon>FrmRecLocationEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReclocationManager.resx">
+      <DependentUpon>FrmReclocationManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRouteEdit.resx">
+      <DependentUpon>FrmRouteEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRouteManager.resx">
+      <DependentUpon>FrmRouteManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSKUWarehouseEdit.resx">
+      <DependentUpon>FrmSKUWarehouseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSkuWarehouseQuery.resx">
+      <DependentUpon>FrmSkuWarehouseQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierEdit.resx">
+      <DependentUpon>FrmSupplierEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplierManager.resx">
+      <DependentUpon>FrmSupplierManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTemperatureEdit.resx">
+      <DependentUpon>FrmTemperatureEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTemperatureManager.resx">
+      <DependentUpon>FrmTemperatureManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitEdit.resx">
+      <DependentUpon>FrmUnitEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitGroupEdit.resx">
+      <DependentUpon>FrmUnitGroupEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitGroupEditType_C.resx">
+      <DependentUpon>FrmUnitGroupEditType_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitGroupItem.resx">
+      <DependentUpon>FrmUnitGroupItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitGroupItemType_C.resx">
+      <DependentUpon>FrmUnitGroupItemType_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitGroupManager.resx">
+      <DependentUpon>FrmUnitGroupManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitGroupManagerType_C.resx">
+      <DependentUpon>FrmUnitGroupManagerType_C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnitManager.resx">
+      <DependentUpon>FrmUnitManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleEdit.resx">
+      <DependentUpon>FrmVehicleEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVehicleManager.resx">
+      <DependentUpon>FrmVehicleManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseEdit.resx">
+      <DependentUpon>FrmWarehouseEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarehouseManager.resx">
+      <DependentUpon>FrmWarehouseManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZoneEdit.resx">
+      <DependentUpon>FrmZoneEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZoneManager.resx">
+      <DependentUpon>FrmZoneManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepContianer.resx">
+      <DependentUpon>RepContianer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepDriverCard.resx">
+      <DependentUpon>RepDriverCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepLocation.resx">
+      <DependentUpon>RepLocation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepVehicle.resx">
+      <DependentUpon>RepVehicle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcMaterialGrid.resx">
+      <DependentUpon>UcMaterialGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UcQueryMaterial.resx">
+      <DependentUpon>UcQueryMaterial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nodes.Entities\Nodes.Entities.csproj">
+      <Project>{62F9A3B1-71C6-48A2-8469-E12560442688}</Project>
+      <Name>Nodes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.UI\Nodes.UI.csproj">
+      <Project>{CD6E171D-A551-48F7-B6AE-BD0419BB6F87}</Project>
+      <Name>Nodes.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.Utils\Nodes.Utils.csproj">
+      <Project>{DAB40E07-939E-4986-8725-BF30DC9525B3}</Project>
+      <Name>Nodes.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

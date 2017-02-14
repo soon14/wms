@@ -1,0 +1,4 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UpdateEngine\bin\Debug\Nodes.UpdateEngine.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UpdateEngine\bin\Debug\Nodes.UpdateEngine.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UpdateEngine\obj\Debug\Nodes.UpdateEngine.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.UpdateEngine\obj\Debug\Nodes.UpdateEngine.pdb

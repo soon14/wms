@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResGenToolArchitecture>Managed32Bit</ResGenToolArchitecture>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C34B4B9F-2D12-4E17-AC8C-855F39CE61F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nodes.Instore</RootNamespace>
+    <AssemblyName>Nodes.Instore</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="LinqBridge, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c2b14eb747628076, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Nodes.WMSClient\dlls\LinqBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Nodes.WMSClient\dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASN\FrmAsnEditRemark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmAsnEditRemark.Designer.cs">
+      <DependentUpon>FrmAsnEditRemark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmAsnManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmAsnManage.Designer.cs">
+      <DependentUpon>FrmAsnManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmAsnQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmAsnQuery.Designer.cs">
+      <DependentUpon>FrmAsnQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmASNShowContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmASNShowContainer.Designer.cs">
+      <DependentUpon>FrmASNShowContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmCardHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmCardHistory.Designer.cs">
+      <DependentUpon>FrmCardHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmCrossInstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmCrossInstore.Designer.cs">
+      <DependentUpon>FrmCrossInstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmCrossInstoreConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmCrossInstoreConfirm.designer.cs">
+      <DependentUpon>FrmCrossInstoreConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmInstoreTypeModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmInstoreTypeModify.Designer.cs">
+      <DependentUpon>FrmInstoreTypeModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmListCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmListCard.Designer.cs">
+      <DependentUpon>FrmListCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\FrmVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASN\FrmVehicle.Designer.cs">
+      <DependentUpon>FrmVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\IAsnManager.cs" />
+    <Compile Include="ASN\PreAsnManager.cs" />
+    <Compile Include="ASN\UcAsnBody.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ASN\UcAsnBody.Designer.cs">
+      <DependentUpon>UcAsnBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ASN\UcAsnQueryEngine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ASN\UcAsnQueryEngine.Designer.cs">
+      <DependentUpon>UcAsnQueryEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmASNBillLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmASNBillLog.designer.cs">
+      <DependentUpon>FrmASNBillLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmContainerState.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContainerState.designer.cs">
+      <DependentUpon>FrmContainerState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IAsnManage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepAsn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepAsn.designer.cs">
+      <DependentUpon>RepAsn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepAsnTransfer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepAsnTransfer.designer.cs">
+      <DependentUpon>RepAsnTransfer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ASN\FrmAsnEditRemark.resx">
+      <DependentUpon>FrmAsnEditRemark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmAsnManage.resx">
+      <DependentUpon>FrmAsnManage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmAsnQuery.resx">
+      <DependentUpon>FrmAsnQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmASNShowContainer.resx">
+      <DependentUpon>FrmASNShowContainer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmCardHistory.resx">
+      <DependentUpon>FrmCardHistory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmCrossInstore.resx">
+      <DependentUpon>FrmCrossInstore.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmCrossInstoreConfirm.resx">
+      <DependentUpon>FrmCrossInstoreConfirm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmInstoreTypeModify.resx">
+      <DependentUpon>FrmInstoreTypeModify.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmListCard.resx">
+      <DependentUpon>FrmListCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\FrmVehicle.resx">
+      <DependentUpon>FrmVehicle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\UcAsnBody.resx">
+      <DependentUpon>UcAsnBody.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASN\UcAsnQueryEngine.resx">
+      <DependentUpon>UcAsnQueryEngine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmASNBillLog.resx">
+      <DependentUpon>FrmASNBillLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmContainerState.resx">
+      <DependentUpon>FrmContainerState.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepAsn.resx">
+      <DependentUpon>RepAsn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepAsnTransfer.resx">
+      <DependentUpon>RepAsnTransfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nodes.DBHelper\Nodes.DBHelper.csproj">
+      <Project>{A399F91B-334E-4651-B024-E10765DD22F8}</Project>
+      <Name>Nodes.DBHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.Entities\Nodes.Entities.csproj">
+      <Project>{62F9A3B1-71C6-48A2-8469-E12560442688}</Project>
+      <Name>Nodes.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.Resources\Nodes.Resources.csproj">
+      <Project>{EB759613-D18B-46E1-9808-42449E5136D8}</Project>
+      <Name>Nodes.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.Shares\Nodes.Shares.csproj">
+      <Project>{D7C6780D-9A98-4298-9917-51D6E8B3E389}</Project>
+      <Name>Nodes.Shares</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.SystemManage\Nodes.SystemManage.csproj">
+      <Project>{9C91D891-A579-4213-A757-A26C213EDD7C}</Project>
+      <Name>Nodes.SystemManage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.UI\Nodes.UI.csproj">
+      <Project>{CD6E171D-A551-48F7-B6AE-BD0419BB6F87}</Project>
+      <Name>Nodes.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.Utils\Nodes.Utils.csproj">
+      <Project>{DAB40E07-939E-4986-8725-BF30DC9525B3}</Project>
+      <Name>Nodes.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,2 @@
+[2017-01-13 13:47:07]  /wms/pickTask/savePickTask============billIds=305183796&houseType=3============{"result":[],"fail":null,"flag":1,"status":"fail"}
+[2017-01-13 13:49:23]  /wms/pickTask/savePickTask============billIds=305183796&houseType=3============{"result":[],"fail":null,"flag":1,"status":"fail"}

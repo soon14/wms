@@ -1,0 +1,7 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.WMSClient\bin\Release\Nodes.Updater.exe
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.WMSClient\bin\Release\Nodes.Updater.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Updater\obj\Release\Nodes.Updater.csprojResolveAssemblyReference.cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Updater\obj\Release\Nodes.Updater.Form1.resources
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Updater\obj\Release\Nodes.Updater.csproj.GenerateResource.Cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Updater\obj\Release\Nodes.Updater.exe
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Updater\obj\Release\Nodes.Updater.pdb

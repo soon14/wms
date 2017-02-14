@@ -1,0 +1,11 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\Nodes.Dapper.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\Nodes.Dapper.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\LinqBridge.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\MySql.Data.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\Nodes.Utils.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\log4net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\Nodes.Utils.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\obj\Debug\Nodes.Dapper.csprojResolveAssemblyReference.cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\obj\Debug\Nodes.Dapper.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\obj\Debug\Nodes.Dapper.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Dapper\bin\Debug\Newtonsoft.Json.dll

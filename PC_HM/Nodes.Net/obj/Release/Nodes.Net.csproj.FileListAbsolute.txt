@@ -1,0 +1,15 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Net.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\LinqBridge.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Newtonsoft.Json.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Entities.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Dapper.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Utils.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\MySql.Data.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\log4net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Entities.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Dapper.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Release\Nodes.Utils.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\obj\Release\Nodes.Net.csprojResolveAssemblyReference.cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\obj\Release\Nodes.Net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\obj\Release\Nodes.Net.pdb

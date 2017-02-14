@@ -1,0 +1,5 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Resources\bin\Release\Nodes.Resources.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Resources\bin\Release\Nodes.Resources.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Resources\obj\Release\Nodes.Resources.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Resources\obj\Release\Nodes.Resources.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Resources\obj\Release\Nodes.Resources.csprojResolveAssemblyReference.cache

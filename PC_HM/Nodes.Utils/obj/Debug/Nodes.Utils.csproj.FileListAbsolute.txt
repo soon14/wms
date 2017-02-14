@@ -1,0 +1,8 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\bin\Debug\Nodes.Utils.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\bin\Debug\Nodes.Utils.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\bin\Debug\log4net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\bin\Debug\MySql.Data.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\obj\Debug\Nodes.Utils.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\obj\Debug\Nodes.Utils.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\obj\Debug\Nodes.Utils.csprojResolveAssemblyReference.cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Utils\bin\Debug\Newtonsoft.Json.dll

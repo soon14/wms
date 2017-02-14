@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ServiceVersion.asmx.cs" Class="Nodes.ServerInterface.ServiceVersion" %>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <ConnectionString Provider="MySql" Value="Server=127.0.0.1;Database=bjd05_1118;User Id=nodes;Password=nodes;pooling=true;AllowUserVariables=True;"></ConnectionString>
+  <!--<ConnectionString Provider="MySql" Value="Server=localhost;Database=d02;User Id=nodes;Password=nodes;pooling=true;AllowUserVariables=True;"></ConnectionString>
+  <ConnectionString Provider="MySql" Value="Server=192.168.90.197;Database=d05;User Id=nodes;Password=nodes;pooling=true;AllowUserVariables=True;"></ConnectionString>-->
+  <!--<ConnectionString Provider="MySql" Value="Server=192.168.0.2;Database=wmsx;User Id=nodes;Password=nodes;pooling=true"></ConnectionString>-->
+  <WMSConnectionString Provider="MySql" Value="Server=bdb003wmsnodes.mysql.rds.aliyuncs.com;Database=wms;User Id=wms_nodes;Password=dbnodes0___;pooling=true;AllowUserVariables=True;"> </WMSConnectionString>
+</configuration>

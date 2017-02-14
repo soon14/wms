@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ResGenToolArchitecture>Managed32Bit</ResGenToolArchitecture>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{62F9A3B1-71C6-48A2-8469-E12560442688}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nodes.Entities</RootNamespace>
+    <AssemblyName>Nodes.Entities</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=5a784a4b889360d3, processorArchitecture=MSIL" />
+    <Reference Include="LinqBridge, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c2b14eb747628076, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Nodes.WMSClient\dlls\LinqBridge.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Nodes.WMSClient\dlls\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASN\ASNBody.cs" />
+    <Compile Include="ASN\ASNBodyEntity.cs" />
+    <Compile Include="ASN\ASNDetailEntity.cs" />
+    <Compile Include="ASN\ASNHeaderEntity.cs" />
+    <Compile Include="ASN\DeletedAsnDetailEntity.cs" />
+    <Compile Include="ASN\DeletedAsnHeaderEntity.cs" />
+    <Compile Include="ASN\PickPlanEntity.cs" />
+    <Compile Include="BaseCodeConstant.cs" />
+    <Compile Include="BaseCodeEntity.cs" />
+    <Compile Include="BaseData\AreaEntity.cs" />
+    <Compile Include="BaseData\BrandEntity.cs" />
+    <Compile Include="BaseData\BugReasonEntity.cs" />
+    <Compile Include="BaseData\CombMaterialEntity.cs" />
+    <Compile Include="BaseData\ContainerEntity.cs" />
+    <Compile Include="BaseData\CustomerEntity.cs" />
+    <Compile Include="BaseData\DriverCardEntity.cs" />
+    <Compile Include="BaseData\ForkEntity.cs" />
+    <Compile Include="BaseData\LocationEntity.cs" />
+    <Compile Include="BaseData\MaterialEntity.cs" />
+    <Compile Include="BaseData\MaterialTypeEntity.cs" />
+    <Compile Include="BaseData\PDAEntity.cs" />
+    <Compile Include="BaseData\PrintLogEntity.cs" />
+    <Compile Include="BaseData\ProvinceEntity.cs" />
+    <Compile Include="BaseData\RecLocationEntity.cs" />
+    <Compile Include="BaseData\RouteEntity.cs" />
+    <Compile Include="BaseData\SkuWarehouseEntity.cs" />
+    <Compile Include="BaseData\StatusEntity.cs" />
+    <Compile Include="BaseData\SupplierEntity.cs" />
+    <Compile Include="BaseData\TaskLevelEntity.cs" />
+    <Compile Include="BaseData\TemperatureEntity.cs" />
+    <Compile Include="BaseData\UnitEntity.cs" />
+    <Compile Include="BaseData\VehicleEntity.cs" />
+    <Compile Include="BaseData\WarehouseEntity.cs" />
+    <Compile Include="BaseData\ZoneEntity.cs" />
+    <Compile Include="BaseData\ZoneTypeEntity.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="BillSKUNum.cs" />
+    <Compile Include="BillStateConst.cs" />
+    <Compile Include="BillStateEntity.cs" />
+    <Compile Include="ChannelEntity.cs" />
+    <Compile Include="CustomFieldEntity.cs" />
+    <Compile Include="Enums\ECommand.cs" />
+    <Compile Include="Enums\ELogType.cs" />
+    <Compile Include="Enums\ESOOperationType.cs" />
+    <Compile Include="Enums\ETaskType.cs" />
+    <Compile Include="Enums\EWarehouseType.cs" />
+    <Compile Include="GlobalSettings.cs" />
+    <Compile Include="HttpEntity\BaseData\GetAllCustomer.cs" />
+    <Compile Include="HttpEntity\BaseData\GetAllCustomerResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllBrands.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllBrandsResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllCardState.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllCardStateResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllContainer.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllContainerResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllFork.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllForkResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllLocationByZone.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllLocationByZoneResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllNotHeGe.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllNotHeGeResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllOrganization.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllOrganizationResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllRecLocation.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllRecLocationResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllRoute.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllRouteResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllSkuWarehouse.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllSkuWarehouseResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllTemperature.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllTemperatureResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllUnit.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllUnitResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllWarehouse.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllWarehouseResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllZJQ.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllZJQResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllZone.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAllZoneResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAreaAll.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetAreaAllResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetLocalAll.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetLocalAllResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetMaterialTypeAll.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetMaterialTypeAllResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetMaxContainerCode.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetMaxContainerCodeResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetMaxName.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetMaxNameResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetUmName.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetUmNameResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetZoneByWarehouseCode.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonGetZoneByWarehouseCodeResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonListRelationSuppliers.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonListRelationSuppliersResult.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonQeryCTL.cs" />
+    <Compile Include="HttpEntity\BaseData\JsonQeryCTLResult.cs" />
+    <Compile Include="HttpEntity\BaseResult.cs" />
+    <Compile Include="HttpEntity\BaseTatolResult.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetAllChannel.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetAllChannelName.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetAllChannelNameResult.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetAllChannelResult.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetAllLocationC02.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetAllLocationC02Result.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetChannel.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetChannelInfo_Box.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetChannelInfo_BoxResult.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetChannelInfo_Picking.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetChannelInfo_PickingResult.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonGetChannelResult.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonObject.cs" />
+    <Compile Include="HttpEntity\C02\BaseData\JsonObjectResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Instore\JsonGetLCStateQuery.cs" />
+    <Compile Include="HttpEntity\C02\C02Instore\JsonGetLCStateQueryResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Instore\JsonListContainerStateC02.cs" />
+    <Compile Include="HttpEntity\C02\C02Instore\JsonListContainerStateC02Result.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonGetContainerSKUMIX.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonGetContainerSKUMIXResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonGetContainerWeightActual.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonGetContainerWeightActualResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonGetXTPrintRecord.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonGetXTPrintRecordResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonListUsersByRoleAndWarehouseCodeC02.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonListUsersByRoleAndWarehouseCodeC02Result.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonQueryBillsC02.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonQueryBillsC02Result.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonSaveCheckWeightBox.cs" />
+    <Compile Include="HttpEntity\C02\C02Out\JsonSaveCheckWeightBoxResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonGetContainerRecordsByCode.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonGetContainerRecordsByCodeResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonQueryLoadingRecords.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonQueryLoadingRecordsResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonQueryPickBoxes.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonQueryPickBoxesResult.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonQueryPickRecordsC02.cs" />
+    <Compile Include="HttpEntity\C02\C02Reports\JsonQueryPickRecordsC02Result.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetBillBoxIndex.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetBillBoxIndexResult.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetBillBoxIndexTotal.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetBillBoxIndexTotalResult.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetContainerWeightByBillID.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetContainerWeightByBillIDResult.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetSOBillMsg.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetSOBillMsgResult.cs" />
+    <Compile Include="HttpEntity\C02\JsonGetWeightRecordsCountByBillID.cs" />
+    <Compile Include="HttpEntity\C02\JsonIsPickCompleted.cs" />
+    <Compile Include="HttpEntity\C02\JsonIsPickCompletedResult.cs" />
+    <Compile Include="HttpEntity\C02\JsonJsonGetWeightRecordsCountByBillIDResult.cs" />
+    <Compile Include="HttpEntity\C02\JsonQueryBillsByStatus.cs" />
+    <Compile Include="HttpEntity\C02\JsonQueryBillsByStatusResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetBillInfo.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetBillInfoResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetBills.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetBillsResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetCountLocation.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetCountLocationResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetCountRecords.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetCountRecordsResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetReportOnlyDiff.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetReportOnlyDiffResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetReportVsStock.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetReportVsStockResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetStockLocation.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonGetStockLocationResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonListChangedLocations.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonListChangedLocationsResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonListGetLocations.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonListGetLocationsResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonListUsersByRoleAndWarehouseCodeForCount.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonListUsersByRoleAndWarehouseCodeForCountResult.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonQueryBillsPanDian.cs" />
+    <Compile Include="HttpEntity\CycleCount\JsonQueryBillsPanDianResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonBaseCodeInfo.cs" />
+    <Compile Include="HttpEntity\Instore\JsonBaseCodeInfoResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonBills.cs" />
+    <Compile Include="HttpEntity\Instore\JsonBillsResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonCardHistory.cs" />
+    <Compile Include="HttpEntity\Instore\JsonCardHistoryResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonContainerState.cs" />
+    <Compile Include="HttpEntity\Instore\JsonContainerStateResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetBillState.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetBillStateResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetContainer.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetContainerNochek.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetContainerNochekResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetContainerRecord.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetContainerRecordResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetContainerResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetCountOfTaskByCase.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetCountOfTaskByCaseResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetDetailByBillID.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetDetailByBillIDResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetTempZone.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetTempZoneResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetWarehouseByCode.cs" />
+    <Compile Include="HttpEntity\Instore\JsonGetWarehouseByCodeResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonQueryOverStockBills.cs" />
+    <Compile Include="HttpEntity\Instore\JsonQueryOverStockBillsResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonSupplier.cs" />
+    <Compile Include="HttpEntity\Instore\JsonSupplierResult.cs" />
+    <Compile Include="HttpEntity\Instore\JsonVehicles.cs" />
+    <Compile Include="HttpEntity\Instore\JsonVehiclesResult.cs" />
+    <Compile Include="HttpEntity\JsonLogin.cs" />
+    <Compile Include="HttpEntity\JsonLoginResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JosnSavePickPlan.cs" />
+    <Compile Include="HttpEntity\Outstore\JosnSavePickPlanResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonCreatePickPlan.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonCreatePickPlanResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonDetails.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonDetailsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillInfoByContainer.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillInfoByContainerResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillNOS.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillNOSResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillPlans.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillPlansResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillStatus.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillStatusResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillVhNoAndVhTrainNo.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBillVhNoAndVhTrainNoResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBulkCargoQty.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetBulkCargoQtyResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCarAll.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCarAllResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCompanys.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCompanysResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetConfirmHistory.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetConfirmHistoryResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetContainerByBillID.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetContainerByBillIDResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetContainerListByBillID.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetContainerListByBillIDResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetContainerRecords.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetContainerRecordsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCtCodeCanT.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCtCodeCanTResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCTCodeMinWeight.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCTCodeMinWeightResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCurrentContainerInfo.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCurrentContainerInfoResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCurrentVhNoAllContainers.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetCurrentVhNoAllContainersResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetDetails.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetDetailsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetFindGoodsDetail.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetFindGoodsDetailResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetFindGoodsDetailVhCode.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetFindGoodsDetailVhCodeResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetHeaderInfoByBillNOS.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetHeaderInfoByBillNOSResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingDetails.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingDetailsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingDetailsResultTrayList.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingHeaderByVehicleID.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingHeaderByVehicleIDResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingHeaders.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingHeadersResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingInfoByNonChooseUser.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingInfoByNonChooseUserResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingNOUnSelected.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingNOUnSelectedResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingRecords.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingRecordsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingTrainRecords.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingTrainRecordsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingUsers.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetLoadingUsersResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetMaxInVehicleSort.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetMaxInVehicleSortResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetNotSafeStock.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetNotSafeStockResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetNumOfContainer.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetNumOfContainerResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetPickPlan.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetPickPlanResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetPickRecordsByBillID.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetPickRecordsByBillIDResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetPickRecordsByCtCode.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetPickRecordsByCtCodeResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetRelatingStackInfo.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetRelatingStackInfoResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetReturnDetails.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetReturnDetailsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetSKULocation.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetSKULocationResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetStatusList.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetStatusListResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetSyncCodeCanT.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetSyncCodeCanTResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetSystemDiffSet.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetSystemDiffSetResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTempPickResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTempPickResultPick.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTempPickResultPickErr.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTempPickResultResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSODetailMsg.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSODetailMsgResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSOMsg.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSOMsgResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSOUserEntity.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSOUserEntityResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSOUsersMsg.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTrainSOUsersMsgResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTuoPanInfo.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetTuoPanInfoResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetUnLoadingBills.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetUnLoadingBillsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetValue.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetValueResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVehicleIDByNO.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVehicleIDByNOResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVehicleInfo.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVehicleInfoResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVHCreateDate.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVHCreateDateResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVhicleHeadersByVehicleID.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVhicleHeadersByVehicleIDResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVHtype.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetVHtypeResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetWeighRecordsByBillID.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetWeighRecordsByBillIDResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetWLXsGrossWeight.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetWLXsGrossWeightResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetWuLiuXiangInfo.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonGetWuLiuXiangInfoResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonIsHasCase.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonIsHasCaseResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonIsHaveOtherStatus.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonIsHaveOtherStatusResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonIsReceiveContainer.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonIsReceiveContainerResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonJudgeIsNext.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonJudgeIsNextResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonJudgetContainerReversed.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonJudgetContainerReversedResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListContainerState.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListContainerStateResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListSystemMenus.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListSystemMenusResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListUsers.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListUsersByRoleAndWarehouseCode.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListUsersByRoleAndWarehouseCodeResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonListUsersResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQuery.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryAllCaseBill.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryAllCaseBillResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBills.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsByStatus.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsByStatusResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsQuery.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsQueryResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsReturn.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsReturnResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsSortMap.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryBillsSortMapResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryNoActiveLocBySku.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryNoActiveLocBySkuResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQueryResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQuerySort.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonQuerySortResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonRepFindGoods.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonSaveStrategy.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonSaveStrategyResult.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonSelect.cs" />
+    <Compile Include="HttpEntity\Outstore\JsonSelectResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonFindStockFlow.cs" />
+    <Compile Include="HttpEntity\Reports\JsonFindStockFlowResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetAsnRecords.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetAsnRecordsResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetContainerInfo.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetContainerInfoResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetLoadingReport2.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetLoadingReport2Result.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetLoadRecordsByWhCode.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetLoadRecordsByWhCodeResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetPutawayRecords.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetPutawayRecordsCount.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetPutawayRecordsCountResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetPutawayRecordsResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetReport.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetReportResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetSKUSaleSort.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetSKUSaleSortResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetStockReviseRecords.cs" />
+    <Compile Include="HttpEntity\Reports\JsonGetStockReviseRecordsResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonListUsersByWarehouseCodeAndTask.cs" />
+    <Compile Include="HttpEntity\Reports\JsonListUsersByWarehouseCodeAndTaskResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonQueryPickRecords.cs" />
+    <Compile Include="HttpEntity\Reports\JsonQueryPickRecordsResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonQuerySoDetails.cs" />
+    <Compile Include="HttpEntity\Reports\JsonQuerySoDetailsResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonQueryTransRecords.cs" />
+    <Compile Include="HttpEntity\Reports\JsonQueryTransRecordsResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonSearchStockAccount.cs" />
+    <Compile Include="HttpEntity\Reports\JsonSearchStockAccountResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonStockTotalFlow.cs" />
+    <Compile Include="HttpEntity\Reports\JsonStockTotalFlowResult.cs" />
+    <Compile Include="HttpEntity\Reports\JsonSummaryByPersonnel.cs" />
+    <Compile Include="HttpEntity\Reports\JsonSummaryByPersonnelResult.cs" />
+    <Compile Include="HttpEntity\Shares\JsonASNGetBill.cs" />
+    <Compile Include="HttpEntity\Shares\JsonASNGetBillResult.cs" />
+    <Compile Include="HttpEntity\Shares\JsonGetSysLoadingSetting.cs" />
+    <Compile Include="HttpEntity\Shares\JsonGetSysLoadingSettingResult.cs" />
+    <Compile Include="HttpEntity\Shares\JsonHasThisRight.cs" />
+    <Compile Include="HttpEntity\Shares\JsonHasThisRightResult.cs" />
+    <Compile Include="HttpEntity\Shares\JsonSOGetBill.cs" />
+    <Compile Include="HttpEntity\Shares\JsonSOGetBillResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetAllLocation.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetAllLocationResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetAllSku.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetAllSkuResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetPickingScan.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetPickingScanResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetResultByGID.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetResultByGIDResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetStockSKU.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetStockSKUResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetTempStockByBill.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetTempStockByBillResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetTempStockByCTCode.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetTempStockByCTCodeResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetTempStockBySKU.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetTempStockBySKUResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetUserInfo.cs" />
+    <Compile Include="HttpEntity\Stock\JsonGetUserInfoResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonInquiryStock.cs" />
+    <Compile Include="HttpEntity\Stock\JsonInquiryStockResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryReplenishStock.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryReplenishStockResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQuerySkuLog.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQuerySkuLogNoLC.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQuerySkuLogNoLCResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQuerySkuLogResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryStock.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryStockRemove.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryStockRemoveResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryStockResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryTransRecords.cs" />
+    <Compile Include="HttpEntity\Stock\JsonQueryTransRecordsResult.cs" />
+    <Compile Include="HttpEntity\Stock\JsonSaveBill.cs" />
+    <Compile Include="HttpEntity\Stock\JsonSaveBillResult.cs" />
+    <Compile Include="HttpEntity\Sucess.cs" />
+    <Compile Include="HttpEntity\SucessResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetAllUsers.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetAllUsersResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetAllUsersResultDt1.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetAllUsersResultDt2.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetBarcodeRule.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetBarcodeRuleResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetCallingData.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetCallingDataResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetCurrentTask.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetCurrentTaskNew.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetCurrentTaskNewResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetCurrentTaskResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetDetailsByTaskID.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetDetailsByTaskIDResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetMaxUserCode.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetMaxUserCodeResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetRoleNameByTaskType.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetRoleNameByTaskTypeResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetSysSetting.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetSysSettingResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTask62.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTask62Result.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTaskByUserCode.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTaskByUserCodeResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTaskDetail.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTasksByType.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTasksByTypeResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTaskType.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetTaskTypeResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetUserByTasks.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonGetUserByTasksResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonJsonGetTaskDetailResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListModules.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListModulesByRoleID.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListModulesByRoleIDResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListModulesResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListMyRoles.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListMyRolesResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListRoles.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListRolesByModuleID.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListRolesByModuleIDResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListRolesResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUserRolesByPick.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUserRolesByPickResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUsersByModuleID.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUsersByModuleIDResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUsersByRoleID.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUsersByRoleIDResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUserState.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonListUserStateResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonQueryStockWarm.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonQueryStockWarmResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonSaveRole.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonSaveRoleResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonSelectZLM.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonSelectZLMResult.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonTempAuthorize.cs" />
+    <Compile Include="HttpEntity\SystemManage\JsonTempAuthorizeResult.cs" />
+    <Compile Include="HttpEntity\UserRole\JsonUserEntity.cs" />
+    <Compile Include="HttpEntity\UserRole\JsonUserEntityResult.cs" />
+    <Compile Include="Inventory\CountDetailEntity.cs" />
+    <Compile Include="Inventory\CountHeaderEntity.cs" />
+    <Compile Include="Inventory\OccupyRecordEntity.cs" />
+    <Compile Include="Inventory\StockRecordEntity.cs" />
+    <Compile Include="Inventory\StockSKUEntity.cs" />
+    <Compile Include="Inventory\StockTransEntity.cs" />
+    <Compile Include="Json\TMSDataDetail.cs" />
+    <Compile Include="Json\TMSDataHeader.cs" />
+    <Compile Include="Json\TMSDataMarket.cs" />
+    <Compile Include="Loading\LoadingDetailEntity.cs" />
+    <Compile Include="Loading\LoadingHeaderEntity.cs" />
+    <Compile Include="Loading\LoadingUsersEntity.cs" />
+    <Compile Include="OutBound\DeletedSODetailEntity.cs" />
+    <Compile Include="OutBound\DeletedSOHeaderEntity.cs" />
+    <Compile Include="OutBound\ReturnBody.cs" />
+    <Compile Include="OutBound\ReturnDetailEntity.cs" />
+    <Compile Include="OutBound\SOBody.cs" />
+    <Compile Include="OutBound\SoContainerLocation.cs" />
+    <Compile Include="OutBound\SoContainerStateEntity.cs" />
+    <Compile Include="OutBound\SODetailAttributeEntity.cs" />
+    <Compile Include="OutBound\SODetailEntity.cs" />
+    <Compile Include="OutBound\SODetailReportEntity.cs" />
+    <Compile Include="OutBound\SOFooterReportEntity.cs" />
+    <Compile Include="OutBound\SOHeaderEntity.cs" />
+    <Compile Include="OutBound\SOSummaryEntity.cs" />
+    <Compile Include="OutBound\SOWeightPrint.cs" />
+    <Compile Include="PO\POBodyEntity.cs" />
+    <Compile Include="PO\PODetailEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\ReportEntity.cs" />
+    <Compile Include="ReturnDetailsEntity.cs" />
+    <Compile Include="ReturnHeaderEntity.cs" />
+    <Compile Include="Screen\EfficiencyEntity.cs" />
+    <Compile Include="Screen\ScreenAchievementEntity.cs" />
+    <Compile Include="SequenceEntity.cs" />
+    <Compile Include="SettingEntity.cs" />
+    <Compile Include="SO\OrderSortDetailPrintEntity.cs" />
+    <Compile Include="SO\OrderSortEntity.cs" />
+    <Compile Include="SO\OrderSortPrintEntity.cs" />
+    <Compile Include="SO\SoGroupEntity.cs" />
+    <Compile Include="SO\SortMapReceiveDataEntity.cs" />
+    <Compile Include="SO\SortMapSendDataEntity.cs" />
+    <Compile Include="SO\SoUnCompleteBillEntity.cs" />
+    <Compile Include="StockAreaInFactoryEntity.cs" />
+    <Compile Include="StockSafeSUPEntity.cs" />
+    <Compile Include="SysCodeConstant.cs" />
+    <Compile Include="TaskEntity.cs" />
+    <Compile Include="TrayStatusTableEntity.cs" />
+    <Compile Include="UserRole\CompanyEntity.cs" />
+    <Compile Include="UserRole\LoginLogEntiy.cs" />
+    <Compile Include="UserRole\OrgEntity.cs" />
+    <Compile Include="UserRole\RoleEntity.cs" />
+    <Compile Include="UserRole\UserEntity.cs" />
+    <Compile Include="VersionInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Nodes.Dapper\Nodes.Dapper.csproj">
+      <Project>{35E37B8C-6E95-40B4-B3CA-64FA50BDDEE6}</Project>
+      <Name>Nodes.Dapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Nodes.Utils\Nodes.Utils.csproj">
+      <Project>{DAB40E07-939E-4986-8725-BF30DC9525B3}</Project>
+      <Name>Nodes.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

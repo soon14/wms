@@ -1,0 +1,15 @@
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Net.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\LinqBridge.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Newtonsoft.Json.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Entities.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Dapper.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Utils.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\MySql.Data.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\log4net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Entities.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Dapper.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\bin\Debug\Nodes.Utils.pdb
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\obj\Debug\Nodes.Net.csprojResolveAssemblyReference.cache
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\obj\Debug\Nodes.Net.dll
+F:\项目\薛华龙\公司SVN\PC_HM\Nodes.Net\obj\Debug\Nodes.Net.pdb
